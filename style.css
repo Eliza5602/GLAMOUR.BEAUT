@@ -68,13 +68,6 @@ section {
     font-size: 0.9rem;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 10px rgba(255, 105, 180, 0.3);
-}
-
-.btn:hover {
-    background-color: #ff45a4;
-    transform: translateY(-3px);
-    box-shadow: 0 6px 12px rgba(255, 105, 180, 0.4);
 }
 
 /* Header */
@@ -122,30 +115,9 @@ nav ul li a {
     transition: all 0.3s;
 }
 
-nav ul li a::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: var(--color-primary);
-    transition: width 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: var(--color-primary);
-}
-
-nav ul li a:hover::after {
-    width: 100%;
-}
-
 /* Banner */
 #banner {
-    background-image: linear-gradient(rgba(255, 105, 180, 0.5), rgba(90, 45, 92, 0.7)), url('/api/placeholder/1200/600');
-    background-size: cover;
-    background-position: center;
+    background-color: var(--color-secondary);
     height: 90vh;
     display: flex;
     align-items: center;
@@ -164,13 +136,11 @@ nav ul li a:hover::after {
     font-family: var(--font-heading);
     font-size: 3.5rem;
     margin-bottom: 1rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .banner-content p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 /* Productos Destacados */
@@ -191,25 +161,16 @@ nav ul li a:hover::after {
     background-color: white;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(255, 105, 180, 0.15);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     padding-bottom: 1.5rem;
     text-align: center;
-    border: 2px solid var(--color-accent);
-}
-
-.producto:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(255, 105, 180, 0.25);
+    border: 1px solid var(--color-accent);
 }
 
 .producto-imagen {
     height: 200px;
     background-color: var(--color-accent);
     margin-bottom: 1.5rem;
-    background-image: url('/api/placeholder/300/200');
-    background-size: cover;
-    background-position: center;
 }
 
 .producto h3 {
@@ -243,10 +204,6 @@ nav ul li a:hover::after {
     transition: all 0.3s ease;
 }
 
-.btn-comprar:hover {
-    background-color: #ff45a4;
-}
-
 /* Beneficios */
 #beneficios {
     background-color: var(--color-light);
@@ -265,12 +222,7 @@ nav ul li a:hover::after {
     background-color: white;
     padding: 2rem;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(255, 105, 180, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.beneficio:hover {
-    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .beneficio i {
@@ -307,16 +259,13 @@ nav ul li a:hover::after {
     background-color: white;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(255, 105, 180, 0.1);
-    border: 2px solid var(--color-accent);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--color-accent);
 }
 
 .tendencia-imagen {
     height: 250px;
     background-color: var(--color-grey);
-    background-image: url('/api/placeholder/400/250');
-    background-size: cover;
-    background-position: center;
 }
 
 .tendencia h3 {
@@ -335,33 +284,11 @@ nav ul li a:hover::after {
     margin: 0 1.5rem 1.5rem;
     color: var(--color-primary);
     font-weight: 600;
-    position: relative;
-}
-
-.leer-mas::after {
-    content: '';
-    position: absolute;
-    bottom: -3px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: var(--color-primary);
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 0.3s ease;
-}
-
-.leer-mas:hover::after {
-    transform: scaleX(1);
-    transform-origin: left;
 }
 
 /* Newsletter */
 #newsletter {
-    background-image: linear-gradient(rgba(255, 105, 180, 0.8), rgba(90, 45, 92, 0.8)), url('/api/placeholder/1200/400');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    background-color: var(--color-dark);
     color: white;
     text-align: center;
 }
@@ -404,11 +331,6 @@ nav ul li a:hover::after {
     border-radius: 0 30px 30px 0;
     font-weight: 600;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.newsletter-content button:hover {
-    background-color: #ff45a4;
 }
 
 /* Testimonios */
@@ -429,20 +351,8 @@ nav ul li a:hover::after {
     background-color: white;
     border-radius: 10px;
     padding: 2rem;
-    box-shadow: 0 5px 15px rgba(255, 105, 180, 0.1);
-    position: relative;
-    border: 2px solid var(--color-accent);
-}
-
-.testimonio::before {
-    content: '"';
-    font-family: var(--font-heading);
-    font-size: 5rem;
-    color: rgba(255, 105, 180, 0.1);
-    position: absolute;
-    top: 10px;
-    left: 15px;
-    line-height: 1;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--color-accent);
 }
 
 .estrella {
@@ -477,22 +387,14 @@ nav ul li a:hover::after {
     background-color: var(--color-light);
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(255, 105, 180, 0.15);
-    transition: transform 0.3s ease;
-    border: 2px solid var(--color-primary);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--color-primary);
     padding-bottom: 2rem;
-}
-
-.creadora:hover {
-    transform: translateY(-10px);
 }
 
 .creadora-imagen {
     height: 250px;
     background-color: var(--color-grey);
-    background-image: url('/api/placeholder/400/400');
-    background-size: cover;
-    background-position: center;
     margin-bottom: 1.5rem;
 }
 
@@ -523,23 +425,6 @@ nav ul li a:hover::after {
     gap: 15px;
 }
 
-.creadora .social-icons a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 35px;
-    height: 35px;
-    background-color: var(--color-primary);
-    color: white;
-    border-radius: 50%;
-    transition: all 0.3s ease;
-}
-
-.creadora .social-icons a:hover {
-    background-color: var(--color-dark);
-    transform: translateY(-3px);
-}
-
 /* Footer */
 footer {
     background-color: var(--color-dark);
@@ -559,19 +444,7 @@ footer {
 .footer-section h3 {
     font-family: var(--font-heading);
     margin-bottom: 1.5rem;
-    position: relative;
-    display: inline-block;
     color: var(--color-secondary);
-}
-
-.footer-section h3::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    width: 40px;
-    height: 2px;
-    background-color: var(--color-primary);
 }
 
 .footer-section p {
@@ -592,12 +465,6 @@ footer {
     height: 35px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
-    transition: all 0.3s ease;
-}
-
-.social-icons a:hover {
-    background-color: var(--color-primary);
-    transform: translateY(-3px);
 }
 
 .footer-section ul li {
@@ -606,12 +473,6 @@ footer {
 
 .footer-section ul li a {
     color: #ddd;
-    transition: color 0.3s ease;
-}
-
-.footer-section ul li a:hover {
-    color: var(--color-primary);
-    padding-left: 5px;
 }
 
 .contact-info li {

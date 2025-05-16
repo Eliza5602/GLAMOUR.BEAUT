@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <!-- Encabezado -->
     <header>
         <div class="logo">
             <h1>GLAMOURBEAUTY</h1>
@@ -24,65 +25,71 @@
         </nav>
     </header>
 
-    <section id="banner" style="position: relative; overflow: hidden;">
-        <div class="banner-background">
-            <img src="Mucho maquillaje.jpg" alt="Fondo de belleza" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 1;">
-        </div>
-        
-        <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.3); z-index: 2;"></div>
-        <div class="banner-content" style="position: relative; z-index: 3; text-align: center; padding: 150px 20px;">
+    <!-- Banner Principal -->
+    <section id="banner">
+        <div class="banner-content">
             <h2>Descubre tu belleza auténtica</h2>
             <p>Las mejores marcas y productos para realzar tu belleza natural</p>
             <a href="#productos" class="btn">Explorar Ahora</a>
         </div>
     </section>
 
+    <!-- Productos Destacados -->
     <section id="destacados">
         <h2 class="section-title">Productos Destacados</h2>
         <div class="productos-container">
+            <!-- Producto 1 -->
             <div class="producto">
                 <div class="producto-imagen" style="background-color: #ffebef; border-radius: 10px 10px 0 0; padding-top: 15px; text-align: center;">
-                    <img src="Base de maquillaje premium.jpg" alt="Base" style="width: 180px; height: 180px; object-fit: cover;">
+                    <img src="Base de Maquillaje Premium1.jpg" alt="Base" style="width: 180px; height: 180px; object-fit: cover;">
                 </div>
                 <h3>Base de Maquillaje Premium</h3>
-                <p class="precio">$29.99</p>
+                <p class="precio">$109.000 pesos</p>
                 <p>Cobertura de larga duración para un acabado perfecto</p>
                 <button class="btn-comprar">Añadir al Carrito</button>
             </div>
+            
+            <!-- Producto 2 -->
             <div class="producto">
-                <div class="producto-imagen" style="background-color: #ffebef; border-radius: 10px 10px 0 0; padding-top: 15px; text-align: center;">
-                    <img src="Paleta de Sombras Luxury.jpg" alt="Paleta" style="width: 180px; height: 180px; object-fit: cover;">
+                <div class="producto-" style="background-color: #ffebef; border-radius: 10px 10px 0 0; padding-top: 15px; text-align: center;">
+                    <img src="Paleta de Sombras Luxury1.jpg" alt="Base" style="width: 180px; height: 180px; object-fit: cover;">
                 </div>
                 <h3>Paleta de Sombras Luxury</h3>
-                <p class="precio">$39.99</p>
+                <p class="precio">$120.000 pesos</p>
                 <p>15 tonos vibrantes para crear looks espectaculares</p>
                 <button class="btn-comprar">Añadir al Carrito</button>
             </div>
+            
+            <!-- Producto 3 -->
             <div class="producto">
                 <div class="producto-imagen" style="background-color: #ffebef; border-radius: 10px 10px 0 0; padding-top: 15px; text-align: center;">
-                    <img src="Kit de Brochas Profesional.jpg" alt="Kit" style="width: 180px; height: 180px; object-fit: cover;">
+                    <img src="Kit de Brochas Profesional1.jpg" alt="Base" style="width: 180px; height: 180px; object-fit: cover;">
                 </div>
                 <h3>Kit de Brochas Profesional</h3>
-                <p class="precio">$45.99</p>
+                <p class="precio">$100.000 pesos</p>
                 <p>12 brochas de alta calidad para aplicación perfecta</p>
                 <button class="btn-comprar">Añadir al Carrito</button>
             </div>
+            
+            <!-- Producto 4 -->
             <div class="producto">
                 <div class="producto-imagen" style="background-color: #ffebef; border-radius: 10px 10px 0 0; padding-top: 15px; text-align: center;">
-                    <img src="Labial Hidratante.jpg" alt="Labial Hidratante" style="width: 180px; height: 180px; object-fit: cover;">
+                    <img src="Labial Hidratante1.webp" alt="Base" style="width: 180px; height: 180px; object-fit: cover;">
                 </div>
                 <h3>Labial Hidratante</h3>
-                <p class="precio">$18.99</p>
+                <p class="precio">$30.000 pesos</p>
                 <p>Color intenso y larga duración con efecto hidratante</p>
                 <button class="btn-comprar">Añadir al Carrito</button>
             </div>
+        </div>
     </section>
 
+    <!-- Beneficios -->
     <section id="beneficios">
         <div class="beneficio">
             <i class="fas fa-truck"></i>
             <h3>Envío Gratuito</h3>
-            <p>En compras superiores a $50</p>
+            <p>En compras superiores a $300.000</p>
         </div>
         <div class="beneficio">
             <i class="fas fa-medal"></i>
@@ -101,9 +108,11 @@
         </div>
     </section>
 
+    <!-- Tendencias -->
     <section id="tendencias">
         <h2 class="section-title">Tendencias de Maquillaje</h2>
         <div class="tendencias-container">
+            <!-- Tendencia 1 -->
             <div class="tendencia">
                 <div class="tendencia-imagen" style="height: auto; padding-bottom: 0;">
                 </div>
@@ -114,32 +123,34 @@
                 <p>La tendencia "no-makeup makeup" que resalta tu belleza natural</p>
                 <a href="#" class="leer-mas">Leer más</a>
             </div>
+            
+            <!-- Tendencia 2 -->
             <div class="tendencia">
                 <div class="tendencia-imagen" style="height: auto; padding-bottom: 0;">
                 </div>
-                <div class="ojos-img" style="text-align: center; background-color: #ffebef; border-radius: 10px 10px 0 0; padding-top: 15px;">
-                    <img src="Ojos Dramáticos11.jpg" alt="ojos-img" style="width: 250px; height: 255px; border-radius: 0; object-fit: cover; margin-bottom: -5px;">
+                <div class="look-img" style="text-align: center; background-color: #ffebef; border-radius: 10px 10px 0 0; padding-top: 15px;">
+                    <img src="Ojos Dramáticos11.jpg" alt="look-img" style="width: 250px; height: 255px; border-radius: 0; object-fit: cover; margin-bottom: -5px;">
                 </div>
                 <h3>Ojos Dramáticos</h3>
                 <p>Aprende a crear miradas intensas con sombras y delineadores</p>
                 <a href="#" class="leer-mas">Leer más</a>
             </div>
             
+            <!-- Tendencia 3 -->
             <div class="tendencia">
                 <div class="tendencia-imagen" style="height: auto; padding-bottom: 0;">
                 </div>
-                <div class="labios-img" style="text-align: center; background-color: #ffebef; border-radius: 10px 10px 0 0; padding-top: 15px;">
-                    <img src="Labios Vibrantes1.jpg" alt="Labios Vibrantes" style="width: 250px; height: 255px; border-radius: 0; object-fit: cover; margin-bottom: -5px;">
+                <div class="look-img" style="text-align: center; background-color: #ffebef; border-radius: 10px 10px 0 0; padding-top: 15px;">
+                    <img src="Labios Vibrantes1.jpg" alt="look-img" style="width: 250px; height: 255px; border-radius: 0; object-fit: cover; margin-bottom: -5px;">
                 </div>
-                <div class="tendencia-content">
-                    <h3>Labios Vibrantes</h3>
-                    <p>Los colores de labiales que son tendencia esta temporada</p>
-                    <a href="#" class="leer-mas">Leer más...</a>
-                </div>
+                <h3>Labios Vibrantes</h3>
+                <p>Los colores de labiales que son tendencia esta temporada</p>
+                <a href="#" class="leer-mas">Leer más</a>
             </div>
-
+        </div>
     </section>
 
+    <!-- Newsletter -->
     <section id="newsletter">
         <div class="newsletter-content">
             <h2>Suscríbete a Nuestro Newsletter</h2>
@@ -151,6 +162,7 @@
         </div>
     </section>
 
+    <!-- Testimonios -->
     <section id="testimonios">
         <h2 class="section-title">Lo Que Dicen Nuestros Clientes</h2>
         <div class="testimonios-container">
@@ -172,6 +184,7 @@
         </div>
     </section>
 
+    <!-- Creadoras -->
     <section id="creadoras">
         <h2 class="section-title">Nuestras Creadoras</h2>
         <div class="creadoras-container">
@@ -181,7 +194,6 @@
                 <div class="Fundadora" style="text-align: center; background-color: #ffebef; border-radius: 10px 10px 0 0; padding-top: 15px;">
                     <img src="Fundadora.jpg1.jpg" alt="Fundadora" style="width: 250px; height: 255px; border-radius: 0; object-fit: cover; margin-bottom: -5px;">
                 </div>
-
                 <h3>Paula González</h3>
                 <p>Fundadora & Directora Creativa</p>
                 <p class="bio">Apasionada por los cosméticos y con más de 10 años de experiencia en la industria de la belleza.</p>
@@ -191,7 +203,11 @@
                 </div>
             </div>
             <div class="creadora">
-                <div class="creadora-imagen"></div>
+                <div class="creadora-imagen"style="height: auto; padding-bottom: 0;">
+                </div>
+                <div class="Fundadora" style="text-align: center; background-color: #ffebef; border-radius: 10px 10px 0 0; padding-top: 15px;">
+                    <img src="cofundadora.jpg" alt="Fundadora" style="width: 250px; height: 255px; border-radius: 0; object-fit: cover; margin-bottom: -5px;">
+                </div>
                 <h3>Elizabeth Hernández</h3>
                 <p>Co-fundadora & Directora de Producto</p>
                 <p class="bio">Especialista en desarrollo de productos cosméticos con un enfoque en ingredientes naturales y sostenibles.</p>
@@ -203,6 +219,7 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <div class="footer-section">
@@ -237,14 +254,14 @@
             <div class="footer-section">
                 <h3>Contacto</h3>
                 <ul class="contact-info">
-                    <li><i class="fas fa-map-marker-alt"></i> Calle Belleza 123, Madrid</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Calle Belleza 123, Bogota</li>
                     <li><i class="fas fa-phone"></i> +34 123 456 789</li>
                     <li><i class="fas fa-envelope"></i> info@glamourbeauty.com</li>
                 </ul>
             </div>
         </div>
         <div class="copyright">
-            <p>&copy; 2025 GLAMOURBEAUTY - Creado por Paula González y Elizabeth Hernández - Todos los derechos reservados</p>
+            <p>&copy; 2025 GLAMOURBEAUTY - Todos los derechos reservados</p>
         </div>
     </footer>
 </body>
